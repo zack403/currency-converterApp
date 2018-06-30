@@ -11,7 +11,7 @@ body{
 
 }
 .footertext{
-    padding-top: 30px;
+    padding-top: 8%;
 }
 footer{
     background-color: aqua;
@@ -36,7 +36,7 @@ header{
 #process{
     margin-left: 5%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 801px) {
 .container{
     display: flex;
     width: 70%;
@@ -62,28 +62,44 @@ header{
     width: 200%;
 }
 .try{
-    margin-left: 140px;
+    margin-left: 10%;
 }
 input[type="text"]{
   width: 200%;
 }
 }
-@media only screen and (max-width: 767px){
-
+@media only screen and (max-width: 768px){
+    .try{
+        margin-left:10%;
+    }
+}
+@media only screen and (max-width: 1200px){
+body{
+    font-size: 50px;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
+.footertext{
+    padding-top: 1%;
+}
+#toCurrency, #to, #fromCurrency, #fromCurrency, #amount{
+    margin-top:5%;
+}
 #btnconvert{
     margin-left : 0;
+    margin-top:5%;
+    margin-bottom: 5%;
+    width: 100%;
 }
 #process{
     margin-left: 0;
 }
 .try{
-    margin-left: 13px;
+    margin-left: 10%;
 }
 .wrapper{
     margin-top: 30%;
