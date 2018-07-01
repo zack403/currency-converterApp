@@ -1,6 +1,6 @@
 const populateCurrency = () => {
     const url = 'https://free.currencyconverterapi.com/api/v5/currencies';
-    fetch(url).then((response) => response.json()
+    fetch(url).then( response => response.json()
     )
     .then( body => {
         let sortCurrency = [];
@@ -68,10 +68,10 @@ const convertCurrency = (amount, fromCurrency, toCurrency, cb) => {
         const query = fromCurrency + '_' + toCurrency;
         const url = 'https://free.currencyconverterapi.com/api/v5/convert?q='
             + query + '&compact=ultra';
-        fetch(url).then((response) => {
+        fetch(url).then( response => {
             return response.json();
         })
-            .then((body) => {
+            .then( body => {
                 try {
                     let jsonObj = body;
 
