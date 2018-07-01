@@ -5,13 +5,13 @@ const populateCurrency = () => {
     .then( body => {
         let sortCurrency = [];
         for (const data in body.results) {
-            sortCurrency.push(data);
-            let sortedArray = sortCurrency.sort();
-            console.log(sortedArray);
-            for (let i = 0; i < sortedArray.length; i++) {
-                const element = sortedArray[i];
+            //sortCurrency.push(data);
+           // let sortedArray = sortCurrency.sort();
+            console.log(data);
+            // for (let i = 0; i < sortedArray.length; i++) {
+            //     const element = sortedArray[i];
                 
-            }
+            // }
             let fromCurrency = document.getElementById("fromCurrency");
             let toCurrency = document.getElementById("toCurrency");
             let toOption = document.createElement("OPTION");
